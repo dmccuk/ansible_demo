@@ -6,7 +6,7 @@ echo "" | sudo tee --append /etc/hosts 2> /dev/null && \
 echo "# Host config for Ansible Master" | sudo tee --append /etc/hosts 2> /dev/null && \
 echo "192.168.32.10   ansible01.example.com  ansible01" | sudo tee --append /etc/hosts 2> /dev/null && \
 echo "192.168.32.20   ansible02.example.com  ansible02" | sudo tee --append /etc/hosts 2> /dev/null && \
-echo "192.168.32.40   ansible03.example.com  ansible03" | sudo tee --append /etc/hosts 2> /dev/null && \
+echo "192.168.32.30   ansible03.example.com  ansible03" | sudo tee --append /etc/hosts 2> /dev/null && \
 echo "192.168.32.40   master.example.com  master" | sudo tee --append /etc/hosts 2> /dev/null && \
 
 #sudo apt-get update -yq
