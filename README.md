@@ -67,4 +67,26 @@ ansible01 | success | rc=0 >>
 
 vagrant@master:~$ 
 
+vagrant@master:~$ ansible -i list.dm all -m shell -a 'hostname > /tmp/name.dm; cat /tmp/name.dm' -k
+SSH password: 
+ansible03 | success | rc=0 >>
+master
+
+ansible01 | success | rc=0 >>
+ansible01
+
+ansible02 | success | rc=0 >>
+web01
+
+vagrant@master:~$ ansible -i list.dm all -m shell -a 'service ssh status' -k
+SSH password: 
+ansible03 | success | rc=0 >>
+ssh start/running, process 1506
+
+ansible01 | success | rc=0 >>
+ssh start/running, process 1501
+
+ansible02 | success | rc=0 >>
+ssh start/running, process 1785
+
  ````
